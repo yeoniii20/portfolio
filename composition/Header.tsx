@@ -2,9 +2,11 @@ import React from "react";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { useRouter } from "next/router";
+import { useResponsive } from "../hooks/useResponsive";
 
 const Header = () => {
   const route = useRouter();
+  const { responsiveCSS } = useResponsive();
 
   return (
     <>
@@ -23,10 +25,10 @@ const Header = () => {
         </h1>
         <h2
           css={css({
-            color: "deeppink",
+            color: responsiveCSS("deepPink", "gray"),
           })}
         >
-          hello my name is suyeon melong
+          hello my name is suyeon
         </h2>
       </div>
     </>
