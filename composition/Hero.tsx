@@ -12,7 +12,7 @@ const Hero = () => {
       <div
         css={css({
           display: "flex",
-          backgroundColor: "skyblue",
+          backgroundColor: "green",
           flexDirection: "column",
         })}
       >

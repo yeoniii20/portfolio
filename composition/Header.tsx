@@ -26,7 +26,7 @@ const Header = () => {
             color: "deeppink",
           })}
         >
-          hello my name is suyeon
+          hello my name is suyeon melong
         </h2>
       </div>
     </>
